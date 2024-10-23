@@ -28,7 +28,7 @@ function getNewNhanVienValue() {
     switch (dataAtrribute) {
       case "tknv":
         {
-          if (Number.isInteger(value * 1)) {
+          if (Number.isInteger(value * 1) && value * 1 > 0) {
             isValid &= checkLength(value, spanThongBao, 4, 6);
             if (!isValid) spanThongBao.innerHTML += " ký số!";
             else {
@@ -37,7 +37,7 @@ function getNewNhanVienValue() {
           } else {
             isValid = false;
             spanThongBao.style.display = "block";
-            spanThongBao.innerHTML = "Tài khoản phải là số!";
+            spanThongBao.innerHTML = "Tài khoản phải là số nguyên dương!";
           }
         }
         break;

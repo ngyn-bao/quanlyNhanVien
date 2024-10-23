@@ -28,7 +28,7 @@ class NhanVien {
       : gioLam * 1 < 192 && gioLam * 1 >= 176
       ? (xepLoai = "Nhân viên giỏi")
       : gioLam * 1 < 176 && gioLam * 1 >= 160
-      ? "Nhân viên khá"
+      ? (xepLoai = "Nhân viên khá")
       : gioLam * 1 < 160
       ? (xepLoai = "Nhân viên trung bình")
       : (xepLoai = "");
