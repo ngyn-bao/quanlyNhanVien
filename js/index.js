@@ -219,6 +219,7 @@ document
 
 document.getElementById("btnDong").onclick = function () {
   let formNhanVien = document.getElementById("formNhanVien");
+  document.getElementById("tknv").readOnly = false;
   formNhanVien.reset();
 };
 // Xóa nhân viên
